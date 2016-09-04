@@ -1,8 +1,17 @@
 var ui = (function() {
 	// cache DOM
+	var downloadSuccess = $('#download-success');
 	var mainTable = $('#main-table');
+	var btnToggleCompactView = $('.toggle-compact-view');
+
+	btnToggleCompactView.on('click', toggleCompactView);
+
+	function toggleCompactView() {
+		mainTable.toggleClass('compact-view');
+	}
 
 	function show(data) {
+		downloadSuccess.removeClass('hidden');
 		sort(data);
 		console.log(data);
 		var html = '';

@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, user-scalable=0, width=device-width">
 	<link href="https://www.dreifragezeichen.de/favicon.ico" rel="favicon" />
 	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="node_modules/nprogress/nprogress.css">
@@ -9,14 +10,21 @@
 	<title>Die drei ??? on Spotify - www.timodenk.com</title>
 </head>
 <body>
+	<nav>
+		<div class="container">
+			<h1><img src="logo.svg" class="logo" /><em class="on-spotify">on Spotify</em></h1>
+		</div>
+	</nav>
 	<div class="container">
-		<h1><img src="logo.svg" height="60" /><em class="on-spotify">on Spotify</em></h1>
 		<h2>All available episodes</h2>
 		<h3 class="hidden error-msg">An error occured</h3>
 		<h4 class="hidden error-msg-details"></h4>
 		<h3 class="loading-msg">Loading...</h3>
-		<table id="main-table" class="table">
-		</table>
+		<div id="download-success" class="hidden">
+			<input type="button" class="toggle-compact-view btn" value="Toggle compact view" />
+			<table id="main-table" class="table">
+			</table>
+		</div>
 		<hr>
 		<p>
 			Image source: <a href="https://de.wikipedia.org/wiki/Datei:Logo_DDF.svg" target="_blank">Franckh-Kosmos Verlags-GmbH &amp; Co. KG</a><br>
