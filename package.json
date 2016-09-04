@@ -1,0 +1,24 @@
+{
+  "name": "die-drei-fragezeichen-on-spotify",
+  "version": "1.0.0",
+  "description": "Overview about available Die drei ??? episodes on spotify.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simsso/Die-drei-Fragezeichen-on-Spotify.git"
+  },
+  "author": "Timo Denk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Simsso/Die-drei-Fragezeichen-on-Spotify/issues"
+  },
+  "homepage": "https://github.com/Simsso/Die-drei-Fragezeichen-on-Spotify#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0",
+    "nprogress": "^0.2.0"
+  }
+}
