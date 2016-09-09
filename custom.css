@@ -24,6 +24,10 @@ nav h1 .on-spotify {
 	opacity: 0.7;
 }
 
+.table-responsive-wrapper {
+    overflow-x: auto;
+}
+
 #main-table {
 	margin-top: 15px;
 }
@@ -31,6 +35,18 @@ nav h1 .on-spotify {
 #main-table .episode-icon {
 	height: 100px;
 	width: 100px;
+	transition: transform .2s ease-in-out;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+	border-radius: 2px;
+}
+#main-table tr:hover .episode-icon {
+	transform: scale(1.2);
+}
+#main-table .episode-icon:hover {
+	transform: scale(1.7) !important;
+}
+#main-table.compact-view .episode-icon:hover {
+	transform: scale(3) !important;
 }
 
 #main-table td {
