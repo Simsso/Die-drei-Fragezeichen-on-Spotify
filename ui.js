@@ -20,7 +20,9 @@ var ui = (function() {
 			html += "<tr>" +
 						"<td>" + getEpisodeImageHTML(episode) + "</td>" + 
 						"<td><h4>" + episode.name + "</h4>" + 
-							"<a href=\"" + episode.external_urls.spotify + "\" target=\"_blank\">" + episode.external_urls.spotify + "</a></td>" + 
+							"<a href=\"" + episode.external_urls.spotify + "\">Spotify (" + episode.external_urls.spotify + ")</a><br>"+
+							"<a href=\"https://www.amazon.de/s/?field-keywords=" + encodeURIComponent(episode.name) + "\" target=\"_blank\">Amazon (https://www.amazon.de/s/?field-keywords=" + encodeURIComponent(episode.name) + ")</a>" + 
+						"</td>" + 
 					"</tr>";
 		}
 		mainTable.html(html);
