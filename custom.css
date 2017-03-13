@@ -40,13 +40,10 @@ nav h1 .on-spotify {
 	border-radius: 2px;
 }
 #main-table tr:hover .episode-icon {
-	transform: scale(1.2);
+	transform: scale(1.3);
 }
-#main-table .episode-icon:hover {
-	transform: scale(1.7) !important;
-}
-#main-table.compact-view .episode-icon:hover {
-	transform: scale(3) !important;
+#main-table.compact-view .episode-icon:hover, #main-table.compact-view tr:hover .episode-icon {
+	transform: none !important;
 }
 
 #main-table td {
@@ -57,14 +54,12 @@ nav h1 .on-spotify {
 	width: 120px;
 }
 
+
+
 /* compact view */
 
 #main-table.compact-view td {
-	padding: 5px;
-}
-
-#main-table.compact-view td {
-	padding: 5px;
+	padding: 2px;
 }
 
 #main-table.compact-view td:first-child {
@@ -80,4 +75,12 @@ nav h1 .on-spotify {
     font-weight: normal;
     font-size: 14px;
     margin: 0;
+}
+
+#main-table.compact-view span.link-url, #main-table.compact-view br {
+	display: none;
+}
+
+#main-table.compact-view a {
+	margin-right: 5px;
 }

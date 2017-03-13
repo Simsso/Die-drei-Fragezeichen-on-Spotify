@@ -1,6 +1,10 @@
 var main = (function() {
 	NProgress.start();
 
+	if (localStorageHelper.getCompactEnabled()) {
+		ui.enableCompactView();
+	}
+
 	api.fetchData(function(err, data) {
 		$('.loading-msg').addClass('hidden');
 
